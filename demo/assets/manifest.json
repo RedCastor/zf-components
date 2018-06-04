@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": "styles/main.scss",
+      "main": true
+    },
+    "foundation.css": {
+      "files": "styles/foundation.scss",
+      "main": true,
+      "bower": ["foundation-sites"]
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    }
+  },
+  "config": {
+    "devUrl": "http://localhost/projects/Staglabel/lib/zf-components/demo"
+  }
+}

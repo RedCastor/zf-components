@@ -1,0 +1,12 @@
+/**
+ * Foundation 6 Components by Viamonkey
+ * Version 1.0.0
+ *
+ * Licensed under MIT Open Source
+ */
+@import "mixins/forms";
+
+//Form Inline
+.form-inline {
+  @include form-inline;
+}

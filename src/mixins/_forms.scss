@@ -1,0 +1,50 @@
+//
+// Forms Framework
+// --------------------------------------------------
+
+
+// Inline forms
+@mixin form-inline {
+
+  // Kick in the inline
+  @include breakpoint(medium) {
+
+    // Inline-block all the things for "inline"
+    .form-group {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+
+    input, select, textarea {
+      display: inline-block;
+      width: auto;
+      vertical-align: middle;
+    }
+
+    label {
+      display: inline-block;
+      vertical-align: middle;
+
+      margin-bottom: 0;
+    }
+
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      position: relative;
+      display: inline-block;
+      margin-left: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+
+    .radio, .checkbox {
+      label {
+        padding-left: 0;
+      }
+    }
+
+  }
+}

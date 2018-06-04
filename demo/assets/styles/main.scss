@@ -1,0 +1,13 @@
+//Font Awesome
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
+@import "../../bower_components/angular-ui-select/dist/select.css";
+
+//Add Custom Variable
+@import "common/variables";
+
+//Add Common
+@import "common/global";
+
+//Layout
+@import "layout/header";
+@import "layout/components";

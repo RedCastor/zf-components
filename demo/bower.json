@@ -1,0 +1,20 @@
+{
+  "name": "demo-zf-components",
+  "homepage": "https://redcastor.github.io/zf-components/demo/",
+  "author": "Auban le Grelle <auban@viamonkey.com>",
+  "description": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "foundation-sites": "6.4.3",
+    "font-awesome": "^4.7.0"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "./scss/font-awesome.scss",
+        "./fonts/*"
+      ]
+    }
+  }
+}

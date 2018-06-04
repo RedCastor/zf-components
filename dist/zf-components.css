@@ -1,0 +1,27 @@
+
+
+@media print, screen and (min-width: 40em) {
+  .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle; }
+  .form-inline input, .form-inline select, .form-inline textarea {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle; }
+  .form-inline label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0; }
+  .form-inline input[type="radio"],
+  .form-inline input[type="checkbox"] {
+    position: relative;
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle; }
+  .form-inline .radio label, .form-inline .checkbox label {
+    padding-left: 0; } }
+
+/*# sourceMappingURL=zf-components.css.map */
