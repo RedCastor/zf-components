@@ -11,7 +11,7 @@
 
     // Inline-block all the things for "inline"
     .form-group {
-      display: inline-block;
+      display: if($global-flexbox, inline-block, inline-table);
       margin-bottom: 0;
       vertical-align: middle;
     }

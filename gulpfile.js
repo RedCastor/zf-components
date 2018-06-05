@@ -26,10 +26,14 @@ var currentPath = path.parse(__dirname);
 
 var assets = {
     styles: [
-        'build/**/*'
+        'build/*'
+    ],
+    stylesFlex: [
+        'build/flex/*'
     ],
     dest: './dist',
-    styleFilename: 'zf-components.css'
+    styleFilename: 'zf-components.css',
+    styleFilenameFlex: 'zf-components-flex.css'
 };
 
 
@@ -191,11 +195,15 @@ gulp.task('scripts_min', function() {
 // raised. If the `--production` flag is set: this task will fail outright.
 gulp.task('styles', function() {
 
-    return cssTasks(assets.styles, assets.dest, assets.styleFilename, false);
-});
-gulp.task('styles_min', function() {
+    var style_flex = cssTasks(assets.stylesFlex, assets.dest, assets.styleFilenameFlex, false);
 
-    return cssTasks(assets.styles, assets.dest, assets.styleFilename, true);
+    var style = cssTasks(assets.styles, assets.dest, assets.styleFilename, false);
+
+    var style_flex_min = cssTasks(assets.stylesFlex, assets.dest, assets.styleFilenameFlex, true);
+
+    var style_min = cssTasks(assets.styles, assets.dest, assets.styleFilename, true);
+
+    return merge(style, style_flex, style_min, style_flex_min);
 });
 
 
@@ -206,7 +214,6 @@ gulp.task('styles_min', function() {
 gulp.task('build', function(callback) {
     runSequence(
         'styles',
-        'styles_min',
         callback);
 });
 

@@ -1,6 +1,6 @@
 {
   "name": "zf-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Auban le Grelle <auban@viamonkey.com>",
   "homepage": "https://redcastor.io",
   "description": "",
@@ -12,7 +12,8 @@
     "zf6"
   ],
   "main": [
-    "dist/zf-components.css"
+    "dist/zf-components.css",
+    "src/zf-components.scss"
   ],
   "ignore": [
     "**/.*",

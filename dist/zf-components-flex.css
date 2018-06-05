@@ -2,7 +2,7 @@
 
 @media print, screen and (min-width: 40em) {
   .form-inline .form-group {
-    display: inline-table;
+    display: inline-block;
     margin-bottom: 0;
     vertical-align: middle; }
   .form-inline input, .form-inline select, .form-inline textarea {
@@ -24,4 +24,4 @@
   .form-inline .radio label, .form-inline .checkbox label {
     padding-left: 0; } }
 
-/*# sourceMappingURL=zf-components.css.map */
+/*# sourceMappingURL=zf-components-flex.css.map */
