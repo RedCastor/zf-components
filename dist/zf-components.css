@@ -8,7 +8,8 @@
   .form-inline input, .form-inline select, .form-inline textarea {
     display: inline-block;
     width: auto;
-    vertical-align: middle; }
+    vertical-align: middle;
+    height: 2.5rem; }
   .form-inline label {
     display: inline-block;
     vertical-align: middle;

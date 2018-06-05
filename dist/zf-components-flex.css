@@ -2,13 +2,14 @@
 
 @media print, screen and (min-width: 40em) {
   .form-inline .form-group {
-    display: inline-block;
+    display: inline-table;
     margin-bottom: 0;
     vertical-align: middle; }
   .form-inline input, .form-inline select, .form-inline textarea {
     display: inline-block;
     width: auto;
-    vertical-align: middle; }
+    vertical-align: middle;
+    height: 2.5rem; }
   .form-inline label {
     display: inline-block;
     vertical-align: middle;

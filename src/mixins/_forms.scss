@@ -6,6 +6,8 @@
 // Inline forms
 @mixin form-inline {
 
+  $height: ($input-font-size + $form-spacing * 1.5);
+
   // Kick in the inline
   @include breakpoint(medium) {
 
@@ -20,6 +22,7 @@
       display: inline-block;
       width: auto;
       vertical-align: middle;
+      height: $height;
     }
 
     label {
